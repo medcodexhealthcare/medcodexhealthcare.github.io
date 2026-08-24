@@ -27,8 +27,7 @@ nav a{color:#fff;text-decoration:none;margin-left:18px;font-size:14px;font-weigh
 .c-box{display:flex;flex-wrap:wrap;gap:20px;max-width:1100px;margin:auto}
 .c-info,.c-form{flex:1;min-width:300px;background:#f7f9fc;padding:22px;border-radius:12px}
 .c-info p{margin:8px 0;font-size:14px}
-input,textarea{width:100%;padding:10px;margin:8px 0;border:1px solid #ccc;border-radius:6px}
-iframe{width:100%;height:520px;border:none;border-radius:10px}
+input,textarea{width:100%;padding:12px;margin:8px 0;border:1px solid #ccc;border-radius:8px}
 footer{background:#061023;color:#8aa0c0;text-align:center;padding:18px;font-size:13px}
 </style>
 </head>
@@ -36,41 +35,27 @@ footer{background:#061023;color:#8aa0c0;text-align:center;padding:18px;font-size
 
 <header>
 <h1>CodeAI <span>Healthcare</span></h1>
-<nav>
-<a href="#services">Services</a>
-<a href="#clients">Clients</a>
-<a href="#contact">Contact</a>
-</nav>
+<nav><a href="#services">Services</a><a href="#clients">Clients</a><a href="#contact">Contact</a></nav>
 </header>
 
 <div class="hero">
 <h2>AI-Powered Radiology & Healthcare IT Solutions</h2>
-<p>From X-ray AI to PACS, Teleradiology, Radiation Safety & RCM - We build end-to-end Medical Imaging Technology for Hospitals & Diagnostic Centers.</p>
+<p>From X-ray AI to PACS, Teleradiology, Radiation Safety & RCM - We build end-to-end Medical Imaging Technology.</p>
 <a href="#contact" class="btn">Contact Us</a>
 </div>
 
 <section class="section" id="services">
 <h2>Our Services / Projects</h2>
 <p class="sub">Everything we do in Radiology AI & Healthcare IT</p>
-
 <div class="grid">
-
 <div class="card"><h3>Radiology AI</h3><ul><li>X-ray AI</li><li>Chest X-ray</li><li>Fracture Detection</li><li>Pneumonia / TB Research</li><li>Lung Nodule Detection</li></ul></div>
-
 <div class="card"><h3>Brain MRI/CT AI</h3><ul><li>Stroke / Lesion Analysis</li><li>Knee MRI / ACL / Meniscus Research</li></ul></div>
-
-<div class="card"><h3>Medical Imaging Technology</h3><ul><li>CT</li><li>MRI</li><li>Ultrasound / Doppler</li><li>Image Quality Analysis</li><li>Protocol Optimization</li><li>Radiation Dose Optimization</li></ul></div>
-
-<div class="card"><h3>PACS & Healthcare IT</h3><ul><li>PACS</li><li>RIS/PACS Integration</li><li>DICOM Viewer</li><li>Imaging Archive</li><li>Radiology Dashboard</li><li>Worklist Management</li></ul></div>
-
-<div class="card"><h3>Teleradiology</h3><ul><li>Case Assignment</li><li>Remote Reporting Workflow</li><li>TAT Dashboard</li><li>DICOM Transfer</li><li>Emergency Case Prioritization</li></ul></div>
-
-<div class="card"><h3>Radiation Safety & QA</h3><ul><li>Dose Monitoring</li><li>CT Dose Tracking</li><li>QA Dashboard</li><li>Repeat / Reject Analysis</li><li>Equipment QA Tracking</li></ul></div>
-
-<div class="card"><h3>Healthcare AI & Analytics</h3><ul><li>AI-assisted Imaging Workflow</li><li>Image Classification</li><li>Image Segmentation</li><li>Radiology Analytics</li><li>Workflow Automation</li></ul></div>
-
-<div class="card"><h3>Medical Coding & RCM</h3><ul><li>Medical Coding</li><li>Medical Billing</li><li>RCM</li><li>Denial Management</li><li>Payment Posting</li><li>AR Follow-up</li></ul></div>
-
+<div class="card"><h3>Medical Imaging Technology</h3><ul><li>CT, MRI, Ultrasound / Doppler</li><li>Image Quality Analysis</li><li>Protocol Optimization</li><li>Radiation Dose Optimization</li></ul></div>
+<div class="card"><h3>PACS & Healthcare IT</h3><ul><li>PACS, RIS/PACS Integration</li><li>DICOM Viewer, Imaging Archive</li><li>Radiology Dashboard, Worklist Management</li></ul></div>
+<div class="card"><h3>Teleradiology</h3><ul><li>Case Assignment</li><li>Remote Reporting Workflow</li><li>TAT Dashboard, DICOM Transfer</li><li>Emergency Case Prioritization</li></ul></div>
+<div class="card"><h3>Radiation Safety & QA</h3><ul><li>Dose Monitoring, CT Dose Tracking</li><li>QA Dashboard, Repeat / Reject Analysis</li><li>Equipment QA Tracking</li></ul></div>
+<div class="card"><h3>Healthcare AI & Analytics</h3><ul><li>AI-assisted Imaging Workflow</li><li>Image Classification & Segmentation</li><li>Radiology Analytics, Workflow Automation</li></ul></div>
+<div class="card"><h3>Medical Coding & RCM</h3><ul><li>Medical Coding, Medical Billing</li><li>RCM, Denial Management</li><li>Payment Posting, AR Follow-up</li></ul></div>
 </div>
 </section>
 
@@ -94,14 +79,20 @@ footer{background:#061023;color:#8aa0c0;text-align:center;padding:18px;font-size
 <hr style="margin:15px 0">
 <p>We provide AI solutions for USA, UK, Canada, Australia, Europe, Japan, UAE & Global Clients.</p>
 </div>
+
 <div class="c-form">
-<h3>Send Message (Google Form)</h3>
-<p style="font-size:13px;color:#666">Aapka message direct hamare Gmail par aayega.</p>
-<!-- GOOGLE FORM YAHAN PASTE KARE -->
-<!-- Apna Google Form ka embed link yahan lagao, example neeche hai -->
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd.../viewform?embedded=true" title="Google Form">Loading…</iframe>
-<p style="font-size:12px;margin-top:8px">Google Form Link: Apne Google Form ka "Send > <> Embed" wala link yahan paste karna hai. Abhi demo link hai.</p>
+<h3>Send Message</h3>
+<p style="font-size:13px;color:#666;margin-bottom:10px">Fill form - message will go to our Gmail directly.</p>
+<form action="mailto:codeaihealthcare@gmail.com" method="post" enctype="text/plain">
+<input type="text" name="Name" placeholder="Your Name" required>
+<input type="email" name="Email" placeholder="Your Email" required>
+<input type="text" name="Country" placeholder="Your Country (USA, UK, Canada...)">
+<textarea name="Message" rows="5" placeholder="Your Message - Tell us your requirement" required></textarea>
+<button type="submit" class="btn" style="width:100%;margin-top:10px">Send Message</button>
+</form>
+<p style="font-size:12px;margin-top:12px;color:#666">Or email directly: <b>codeaihealthcare@gmail.com</b></p>
 </div>
+
 </div>
 </section>
 
