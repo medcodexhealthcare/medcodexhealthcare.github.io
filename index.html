@@ -3,75 +3,112 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CodeAI Healthcare | AI Healthcare Solutions - Global</title>
+<title>CodeAI Healthcare - Radiology AI & Healthcare IT</title>
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family: 'Inter', system-ui, sans-serif}
-body{background:#fff;color:#0f172a;line-height:1.7}
-header{background:linear-gradient(135deg,#020617 0%, #1e3a8a 50%, #0f172a 100%);color:white;padding:80px 20px;text-align:center}
-header h1{font-size:44px;letter-spacing:-1px}
-header h1 span{color:#22d3ee}
-header p{max-width:750px;margin:20px auto 0;font-size:19px;opacity:0.85;line-height:1.6}
-.btns{margin-top:30px;display:flex;gap:15px;justify-content:center;flex-wrap:wrap}
-.btn{padding:14px 32px;border-radius:50px;text-decoration:none;font-weight:700;transition:0.3s}
-.btn1{background:#22c55e;color:white}
-.btn2{background:white;color:#0f172a}
-section{padding:70px 20px;max-width:1150px;margin:auto}
-.badge{display:inline-block;background:#dbeafe;color:#1e40af;padding:6px 16px;border-radius:30px;font-weight:700;font-size:13px;margin-bottom:15px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:22px;margin-top:30px}
-.card{border:1px solid #e2e8f0;padding:28px;border-radius:18px;background:white;box-shadow:0 5px 20px rgba(0,0,0,0.04)}
-.card h3{margin-bottom:10px}
-.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px;background:#0f172a;color:white;padding:50px 30px;border-radius:20px;margin-top:40px;text-align:center}
-.stats h2{font-size:36px;color:#22d3ee}
-.tech{background:#f8fafc;border-radius:20px;padding:40px;margin-top:40px}
-footer{background:#020617;color:#94a3b8;text-align:center;padding:40px 20px;margin-top:50px}
+*{margin:0;padding:0;box-sizing:border-box;font-family:Segoe UI,Arial,sans-serif}
+body{background:#f7f9fc;color:#1a2333;line-height:1.6}
+header{background:#0a1931;color:#fff;padding:15px 30px;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:99}
+header h1{font-size:22px} header h1 span{color:#00e5a0}
+nav a{color:#fff;text-decoration:none;margin-left:18px;font-size:14px;font-weight:600}
+.hero{background:linear-gradient(120deg,#0a1931,#185adb);color:#fff;padding:70px 25px;text-align:center}
+.hero h2{font-size:38px;margin-bottom:10px} .hero p{max-width:800px;margin:10px auto 20px;color:#d0e0ff}
+.btn{padding:12px 28px;background:#00e5a0;color:#0a1931;border:none;border-radius:25px;font-weight:700;cursor:pointer;text-decoration:none;display:inline-block}
+.section{padding:50px 25px;max-width:1250px;margin:auto}
+.section h2{font-size:28px;color:#0a1931;text-align:center;margin-bottom:8px}
+.section .sub{color:#666;text-align:center;margin-bottom:30px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:18px}
+.card{background:#fff;padding:20px;border-radius:12px;box-shadow:0 4px 18px rgba(0,0,0,0.07);border-left:4px solid #185adb}
+.card h3{color:#0a1931;font-size:16px;margin-bottom:8px}
+.card ul{padding-left:18px;font-size:13.5px;color:#444}
+.card ul li{margin:4px 0}
+.clients{background:#0a1931;color:#fff;padding:40px 25px;text-align:center}
+.flags span{display:inline-block;background:#122a5a;margin:6px;padding:8px 14px;border-radius:20px;font-size:13px;border:1px solid #2a4a8a}
+.contact{background:#fff;padding:50px 25px}
+.c-box{display:flex;flex-wrap:wrap;gap:20px;max-width:1100px;margin:auto}
+.c-info,.c-form{flex:1;min-width:300px;background:#f7f9fc;padding:22px;border-radius:12px}
+.c-info p{margin:8px 0;font-size:14px}
+input,textarea{width:100%;padding:10px;margin:8px 0;border:1px solid #ccc;border-radius:6px}
+iframe{width:100%;height:520px;border:none;border-radius:10px}
+footer{background:#061023;color:#8aa0c0;text-align:center;padding:18px;font-size:13px}
 </style>
 </head>
 <body>
+
 <header>
-<div class="badge">🌍 Serving Clients in USA, Canada, UK, Australia & India</div>
 <h1>CodeAI <span>Healthcare</span></h1>
-<p>We Build AI-Powered Healthcare Software, Mobile Apps & Automation Solutions for Hospitals, Clinics, and Health-Tech Startups Worldwide.</p>
-<div class="btns">
-<a class="btn btn1" href="#contact">Get a Free Quote</a>
-<a class="btn btn2" href="#services">View Our Services</a>
-</div>
+<nav>
+<a href="#services">Services</a>
+<a href="#clients">Clients</a>
+<a href="#contact">Contact</a>
+</nav>
 </header>
 
-<section id="services">
-<h2 style="font-size:32px;text-align:center">What We Do For Global Clients</h2>
-<p style="text-align:center;color:#64748b;max-width:700px;margin:10px auto 0">We help USA, Canada, UK, Australia healthcare companies to build AI products faster and at affordable cost.</p>
+<div class="hero">
+<h2>AI-Powered Radiology & Healthcare IT Solutions</h2>
+<p>From X-ray AI to PACS, Teleradiology, Radiation Safety & RCM - We build end-to-end Medical Imaging Technology for Hospitals & Diagnostic Centers.</p>
+<a href="#contact" class="btn">Contact Us</a>
+</div>
+
+<section class="section" id="services">
+<h2>Our Services / Projects</h2>
+<p class="sub">Everything we do in Radiology AI & Healthcare IT</p>
+
 <div class="grid">
-<div class="card"><h3>🤖 AI Health Chatbot Development</h3><p>Custom HIPAA-compliant AI assistants for patient queries, appointment booking & symptom triage.</p></div>
-<div class="card"><h3>📄 Medical Report Analysis AI</h3><p>AI that reads Lab Reports, X-Rays, MRIs and converts them into patient-friendly summaries.</p></div>
-<div class="card"><h3>📱 Healthcare App Development</h3><p>iOS & Android apps for telemedicine, doctor booking, medicine delivery, and remote patient monitoring.</p></div>
-<div class="card"><h3>🏥 Hospital Management System</h3><p>Complete HMS, EMR/EHR systems with AI analytics, billing, and inventory for US & global standards.</p></div>
-<div class="card"><h3>🔗 API & AI Integration</h3><p>We integrate OpenAI, Google Health AI, and custom AI models into your existing healthcare software.</p></div>
-<div class="card"><h3>🌐 Outsourcing & Dedicated Team</h3><p>Hire our AI developers from India at 60% less cost than USA. Dedicated team for your project.</p></div>
+
+<div class="card"><h3>Radiology AI</h3><ul><li>X-ray AI</li><li>Chest X-ray</li><li>Fracture Detection</li><li>Pneumonia / TB Research</li><li>Lung Nodule Detection</li></ul></div>
+
+<div class="card"><h3>Brain MRI/CT AI</h3><ul><li>Stroke / Lesion Analysis</li><li>Knee MRI / ACL / Meniscus Research</li></ul></div>
+
+<div class="card"><h3>Medical Imaging Technology</h3><ul><li>CT</li><li>MRI</li><li>Ultrasound / Doppler</li><li>Image Quality Analysis</li><li>Protocol Optimization</li><li>Radiation Dose Optimization</li></ul></div>
+
+<div class="card"><h3>PACS & Healthcare IT</h3><ul><li>PACS</li><li>RIS/PACS Integration</li><li>DICOM Viewer</li><li>Imaging Archive</li><li>Radiology Dashboard</li><li>Worklist Management</li></ul></div>
+
+<div class="card"><h3>Teleradiology</h3><ul><li>Case Assignment</li><li>Remote Reporting Workflow</li><li>TAT Dashboard</li><li>DICOM Transfer</li><li>Emergency Case Prioritization</li></ul></div>
+
+<div class="card"><h3>Radiation Safety & QA</h3><ul><li>Dose Monitoring</li><li>CT Dose Tracking</li><li>QA Dashboard</li><li>Repeat / Reject Analysis</li><li>Equipment QA Tracking</li></ul></div>
+
+<div class="card"><h3>Healthcare AI & Analytics</h3><ul><li>AI-assisted Imaging Workflow</li><li>Image Classification</li><li>Image Segmentation</li><li>Radiology Analytics</li><li>Workflow Automation</li></ul></div>
+
+<div class="card"><h3>Medical Coding & RCM</h3><ul><li>Medical Coding</li><li>Medical Billing</li><li>RCM</li><li>Denial Management</li><li>Payment Posting</li><li>AR Follow-up</li></ul></div>
+
+</div>
+</section>
+
+<div class="clients" id="clients">
+<h2>Our Global Clients</h2>
+<p style="color:#a0b8e0;margin:10px 0 20px">Trusted by Hospitals & Radiology Centers Worldwide</p>
+<div class="flags">
+<span>🇺🇸 USA</span><span>🇬🇧 UK</span><span>🇨🇦 Canada</span><span>🇦🇺 Australia</span><span>🇳🇿 New Zealand</span><span>🇪🇺 Europe</span><span>🇯🇵 Japan</span><span>🇦🇪 UAE</span><span>🌍 Other Countries</span>
+</div>
 </div>
 
-<div class="stats">
-<div><h2>50+</h2><p>Projects Idea Ready</p></div>
-<div><h2>USA/UK/AUS</h2><p>Target Markets</p></div>
-<div><h2>24/7</h2><p>Support Available</p></div>
-<div><h2>100%</h2><p>Client Satisfaction Goal</p></div>
+<section class="contact" id="contact">
+<h2 style="text-align:center;color:#0a1931;font-size:28px;margin-bottom:25px">Contact Us</h2>
+<div class="c-box">
+<div class="c-info">
+<h3>CodeAI Healthcare</h3>
+<p><b>Address:</b> Hazaribagh, Jharkhand, India</p>
+<p><b>Email:</b> codeaihealthcare@gmail.com</p>
+<p><b>Website:</b> https://codeaihealthcare.github.io/</p>
+<p><b>Services:</b> Radiology AI, PACS, Teleradiology, DICOM, RCM, Medical Coding</p>
+<hr style="margin:15px 0">
+<p>We provide AI solutions for USA, UK, Canada, Australia, Europe, Japan, UAE & Global Clients.</p>
 </div>
-
-<div class="tech" id="contact">
-<h2>Why Choose Us?</h2><br>
-<p><b>✅ Affordable Pricing:</b> Get USA quality work at Indian pricing - Save up to 60% cost.</p>
-<p><b>✅ Global Quality:</b> Clean code, HIPAA-aware, GDPR-compliant, modern design.</p>
-<p><b>✅ Fast Delivery:</b> Agile development with weekly updates.</p>
-<p><b>✅ Based in India, Working Globally:</b> Hazaribagh, Jharkhand origin with a global vision.</p><br><hr><br>
-<h3>Contact For Projects</h3>
-<p><b>Headquarters:</b> Hazaribagh, Jharkhand, India - 825301 (Serving Worldwide)</p>
-<p><b>Email:</b> support@codeaihealthcare.github.io</p>
-<p><b>Available for:</b> USA, Canada, UK (London), Australia, India Clients</p>
-<p><b>Let's Build Your Healthcare Idea!</b></p>
+<div class="c-form">
+<h3>Send Message (Google Form)</h3>
+<p style="font-size:13px;color:#666">Aapka message direct hamare Gmail par aayega.</p>
+<!-- GOOGLE FORM YAHAN PASTE KARE -->
+<!-- Apna Google Form ka embed link yahan lagao, example neeche hai -->
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd.../viewform?embedded=true" title="Google Form">Loading…</iframe>
+<p style="font-size:12px;margin-top:8px">Google Form Link: Apne Google Form ka "Send > <> Embed" wala link yahan paste karna hai. Abhi demo link hai.</p>
+</div>
 </div>
 </section>
 
 <footer>
-<p>© 2026 CodeAI Healthcare - From Hazaribagh to the World 🌍<br>Trusted by Future Global Clients | codeaihealthcare.github.io</p>
+© 2026 CodeAI Healthcare | Hazaribagh, Jharkhand, India | codeaihealthcare@gmail.com<br>
+Serving Clients in USA, UK, Canada, Australia, New Zealand, Europe, Japan, UAE & Worldwide
 </footer>
+
 </body>
 </html>
