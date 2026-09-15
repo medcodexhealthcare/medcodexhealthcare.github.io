@@ -15,13 +15,16 @@ body{font-family:Arial,sans-serif;margin:0;padding:0;background:#f8f9fa;color:#2
 .card h3{color:#0077b6;margin-top:20px}
 ul{line-height:28px}
 .tag{display:inline-block;background:#e3f2fd;color:#0a2540;padding:5px 12px;border-radius:20px;margin:4px;font-size:14px}
-.btn{display:inline-block;background:#00a8e8;color:#fff;padding:14px 28px;border-radius:8px;text-decoration:none;font-weight:bold;font-size:16px;margin-top:10px}
+.btn{display:inline-block;background:#00a8e8;color:#fff;padding:14px 28px;border-radius:8px;text-decoration:none;font-weight:bold;font-size:16px;margin-top:10px;border:none;cursor:pointer}
 .btn:hover{background:#0077b6}
 .form-box{background:linear-gradient(135deg,#0a2540,#0077b6);color:#fff;padding:35px;border-radius:12px;text-align:center;margin:25px 0}
 .footer{background:#0a2540;color:#fff;text-align:center;padding:30px;margin-top:30px;line-height:26px}
-iframe{width:100%;height:850px;border:none;border-radius:12px;background:#fff}
 .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:15px;text-align:left;margin-top:15px}
 @media(max-width:600px){.contact-grid{grid-template-columns:1fr}}
+.input-group{margin-bottom:18px;text-align:left}
+.input-group label{display:block;font-weight:bold;margin-bottom:6px;color:#0a2540}
+.input-group input, .input-group select, .input-group textarea{width:100%;padding:12px;border:1px solid #ccc;border-radius:8px;font-size:15px;box-sizing:border-box}
+.input-group textarea{height:120px;resize:vertical}
 </style>
 </head>
 <body>
@@ -50,11 +53,6 @@ iframe{width:100%;height:850px;border:none;border-radius:12px;background:#fff}
 <span class="tag">Chest X-ray AI (Fracture, Pneumonia, TB, Lung Nodule)</span>
 <span class="tag">Brain MRI/CT (Stroke/Lesion)</span>
 <span class="tag">Knee MRI (ACL/Meniscus)</span>
-<h3>PACS & Healthcare IT</h3>
-<ul>
-<li>PACS, RIS/PACS Integration, DICOM Viewer, Imaging Archive</li>
-<li>Radiology Dashboard & Worklist Management</li>
-</ul>
 </div>
 
 <div class="card">
@@ -62,7 +60,6 @@ iframe{width:100%;height:850px;border:none;border-radius:12px;background:#fff}
 <ul>
 <li>Case Assignment, Remote Reporting Workflow, TAT Dashboard</li>
 <li>DICOM Transfer, Emergency Case Prioritization</li>
-<li>Dose Monitoring, QA Dashboard, Equipment QA Tracking</li>
 </ul>
 </div>
 
@@ -72,16 +69,11 @@ iframe{width:100%;height:850px;border:none;border-radius:12px;background:#fff}
 <span class="tag">Payment Posting</span>
 <span class="tag">AR Calling & Follow-up</span>
 <span class="tag">Denial Management</span>
-<span class="tag">Eligibility & Benefits Verification</span>
 <span class="tag">ICD-10</span>
 <span class="tag">CPT</span>
 <span class="tag">HCPCS Coding</span>
 <span class="tag">Coding Audits</span>
 <span class="tag">Risk Adjustment (HCC)</span>
-<ul>
-<li>Old AR Cleanup Projects (30/60/90/120+ days)</li>
-<li>Provider Credentialing & Payer Enrollment</li>
-</ul>
 </div>
 
 <div class="card" style="background:#eef7ff;border:2px solid #00a8e8;">
@@ -95,39 +87,80 @@ iframe{width:100%;height:850px;border:none;border-radius:12px;background:#fff}
 <span class="tag">🇮🇳 India</span>
 </div>
 
-<!-- GOOGLE FORM SECTION -->
-<div class="form-box">
-<h2 style="border:none;color:#fff;padding:0">Get a Free Quote for Your Project</h2>
-<p>Fill the form - We will reply within 4 hours in US time zone</p>
-<a class="btn" href="https://forms.gle/YOUR-FORM-LINK" target="_blank">Fill Google Form - Get Quote</a>
-</div>
-
+<!-- NEW CONTACT FORM - GOOGLE FORM STYLE -->
 <div class="card">
-<h2>Contact Us - Quick Enquiry</h2>
-<p>Form yahi website pe bharein, ya direct email karein.</p>
-<iframe src="https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform?embedded=true">Loading…</iframe>
-<p style="text-align:center;margin-top:15px;color:#666">Form not loading? <a href="https://forms.gle/YOUR-FORM-LINK" target="_blank" style="color:#0077b6;font-weight:bold;">Click here to open in new tab</a></p>
+<h2>Contact Us - Get Free Quote</h2>
+<p>Fill this form - We will reply within 4 hours in US time zone</p>
+
+<form action="mailto:medcodexhealthcare@gmail.com" method="post" enctype="text/plain">
+<div class="contact-grid">
+<div class="input-group">
+<label>Full Name *</label>
+<input type="text" name="Name" placeholder="Your Name" required>
+</div>
+<div class="input-group">
+<label>Work Email *</label>
+<input type="email" name="Email" placeholder="company@email.com" required>
+</div>
 </div>
 
-<div class="card" style="background:#0a2540;color:#fff;">
-<h2 style="color:#fff;border-left-color:#00a8e8;">Contact Information</h2>
 <div class="contact-grid">
-<div>
+<div class="input-group">
+<label>Company Name</label>
+<input type="text" name="Company" placeholder="Your Company / Hospital">
+</div>
+<div class="input-group">
+<label>Country *</label>
+<select name="Country" required>
+<option value="">Select Country</option>
+<option>USA</option>
+<option>UK</option>
+<option>Canada</option>
+<option>Australia</option>
+<option>New Zealand</option>
+<option>India</option>
+<option>Other</option>
+</select>
+</div>
+</div>
+
+<div class="input-group">
+<label>Service Interested In *</label>
+<select name="Service" required>
+<option value="">Select Service</option>
+<option>Medical Data Annotation</option>
+<option>Radiology AI & Imaging</option>
+<option>Teleradiology Operations</option>
+<option>RCM & Medical Coding</option>
+<option>AR Calling & Denial Management</option>
+<option>Provider Credentialing</option>
+<option>Other</option>
+</select>
+</div>
+
+<div class="input-group">
+<label>Project Details *</label>
+<textarea name="Message" placeholder="Tell us about your project requirements..." required></textarea>
+</div>
+
+<button type="submit" class="btn" style="width:100%;font-size:18px;">Send Enquiry to Medcodex</button>
+</form>
+
+<p style="text-align:center;margin-top:15px;color:#666">Or email us directly at <strong style="color:#0a2540;">medcodexhealthcare@gmail.com</strong></p>
+</div>
+
+<div class="card" style="background:#0a2540;color:#fff;text-align:center;">
+<h2 style="color:#fff;border-left-color:#00a8e8;">Contact Information</h2>
 <p><strong>📍 Address:</strong><br>Medcodex Health Care<br>Hebbal, Bangalore<br>Karnataka - 560024, India</p>
-</div>
-<div>
-<p><strong>📧 Email:</strong><br>medcodexhealthcare@gmail.com<br>pradeep.kumar.bmrdit@gmail.com</p>
-<p><strong>📞 Phone:</strong><br>+91 8340358682</p>
-</div>
-</div>
-<p style="margin-top:20px;color:#a3d9ff;text-align:center;">24/7 Available in US Time Zone | HIPAA Compliant</p>
+<p style="margin-top:15px;"><strong>📧 Email:</strong><br>medcodexhealthcare@gmail.com</p>
+<p style="margin-top:20px;color:#a3d9ff;">24/7 Available in US Time Zone | HIPAA Compliant</p>
 </div>
 
 </div>
 
 <div class="footer">
 <p>© 2026 Medcodex Health Care | Hebbal, Bangalore - 560024 | Serving US Healthcare Globally</p>
-<p>Email: medcodexhealthcare@gmail.com</p>
+<p>Email: medcodexhealthcare@gmail.com | HIPAA Compliant | 24/7 US Time Zone Support</p>
 </div>
 
 </body>
