@@ -1,357 +1,654 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>MedCodex Healthcare | Global Powerline Infrastructure</title>
+<title>MedCodex Group | Healthcare, Infrastructure & Social Development</title>
 
-<meta name="description" content="MedCodex Healthcare provides global healthcare outsourcing, medical AI, medical imaging, and healthcare BPO services from India. Global Powerline Infrastructure provides transmission line construction services. MedCodex Healthcare Foundation focuses on education and social development.">
+<meta name="description" content="MedCodex Group connects global healthcare outsourcing, medical AI, power transmission infrastructure, education and social development initiatives from India.">
 
-<meta name="keywords" content="Healthcare Outsourcing, Medical Coding, Medical AI, Radiology, Medical Image Annotation, Transmission Line, Tower Erection, Foundation, School, College, University, NGO, India">
+<meta name="keywords" content="MedCodex Healthcare, Healthcare Outsourcing, Medical Coding, Medical Billing, Medical AI, Radiology, Image Annotation, Global Powerline Infrastructure, Transmission Line Construction, Tower Erection, OPGW, Education Foundation, Scholarships, India">
+
+<meta name="author" content="MedCodex Group">
+
+<meta name="robots" content="index, follow">
+
+<meta name="theme-color" content="#071b35">
 
 <style>
 
+/* ================= GENERAL ================= */
+
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
-scroll-behavior:smooth;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
 }
 
 body{
-font-family:Arial,Helvetica,sans-serif;
-background:#f5f7fb;
-color:#263238;
-line-height:1.7;
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f5f8fc;
+    color:#263445;
+    line-height:1.7;
 }
 
-header{
-background:#071d35;
-color:white;
-padding:18px 7%;
-display:flex;
-justify-content:space-between;
-align-items:center;
-flex-wrap:wrap;
-position:sticky;
-top:0;
-z-index:1000;
+a{
+    text-decoration:none;
 }
 
-.logo{
-font-size:23px;
-font-weight:bold;
-color:#25c4c7;
+.container{
+    width:90%;
+    max-width:1250px;
+    margin:auto;
 }
 
-nav{
-display:flex;
-flex-wrap:wrap;
-gap:18px;
-}
-
-nav a{
-color:white;
-text-decoration:none;
-font-size:14px;
-font-weight:bold;
-}
-
-nav a:hover{
-color:#25c4c7;
-}
-
-.hero{
-background:linear-gradient(120deg,#071d35,#075b78);
-color:white;
-padding:110px 8%;
-text-align:center;
-}
-
-.hero h1{
-font-size:43px;
-margin-bottom:20px;
-}
-
-.hero p{
-max-width:850px;
-margin:auto;
-font-size:18px;
-}
-
-.btn{
-display:inline-block;
-margin-top:25px;
-padding:13px 27px;
-background:#19bfc3;
-color:#06243b;
-text-decoration:none;
-border-radius:5px;
-font-weight:bold;
-}
-
-.btn:hover{
-background:white;
-}
-
-section{
-padding:75px 8%;
+.section{
+    padding:85px 0;
 }
 
 .section-title{
-text-align:center;
-font-size:32px;
-color:#092d4b;
-margin-bottom:15px;
+    font-size:36px;
+    text-align:center;
+    color:#092c4c;
+    margin-bottom:15px;
 }
 
-.section-desc{
-text-align:center;
-max-width:850px;
-margin:0 auto 40px;
-color:#64748b;
+.section-subtitle{
+    max-width:850px;
+    margin:0 auto 45px;
+    text-align:center;
+    color:#64748b;
+    font-size:16px;
 }
+
+.accent{
+    color:#11b9bd;
+}
+
+/* ================= HEADER ================= */
+
+header{
+    background:#071b35;
+    color:white;
+    position:sticky;
+    top:0;
+    z-index:999;
+    box-shadow:0 4px 15px rgba(0,0,0,.15);
+}
+
+.header-inner{
+    min-height:80px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:20px;
+}
+
+.logo{
+    font-size:24px;
+    font-weight:bold;
+    color:#20c4c6;
+    letter-spacing:1px;
+}
+
+.logo span{
+    display:block;
+    color:white;
+    font-size:10px;
+    letter-spacing:3px;
+    font-weight:normal;
+}
+
+nav{
+    display:flex;
+    align-items:center;
+    gap:22px;
+}
+
+nav a{
+    color:white;
+    font-size:13px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#20c4c6;
+}
+
+.nav-button{
+    background:#15bfc2;
+    color:#06233d;
+    padding:11px 18px;
+    border-radius:5px;
+}
+
+/* ================= HERO ================= */
+
+.hero{
+    background:
+    linear-gradient(120deg,rgba(4,24,48,.96),rgba(4,90,117,.88)),
+    url("https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1800&q=85");
+
+    background-size:cover;
+    background-position:center;
+    color:white;
+    padding:130px 0;
+    text-align:center;
+}
+
+.hero-content{
+    max-width:950px;
+    margin:auto;
+}
+
+.hero-label{
+    color:#35d3d1;
+    font-weight:bold;
+    letter-spacing:3px;
+    font-size:13px;
+    margin-bottom:20px;
+}
+
+.hero h1{
+    font-size:52px;
+    line-height:1.2;
+    margin-bottom:25px;
+}
+
+.hero p{
+    font-size:18px;
+    color:#e2edf5;
+    max-width:850px;
+    margin:auto;
+}
+
+.hero-buttons{
+    margin-top:35px;
+}
+
+.btn{
+    display:inline-block;
+    padding:14px 27px;
+    margin:7px;
+    border-radius:5px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn-primary{
+    background:#18c1c3;
+    color:#06243c;
+}
+
+.btn-primary:hover{
+    background:white;
+}
+
+.btn-outline{
+    border:1px solid white;
+    color:white;
+}
+
+.btn-outline:hover{
+    background:white;
+    color:#071b35;
+}
+
+/* ================= INTRO ================= */
+
+.intro{
+    background:white;
+}
+
+.intro-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+.intro-card{
+    background:#f7fafc;
+    padding:30px;
+    border-radius:10px;
+    border-bottom:4px solid #16bfc2;
+    transition:.3s;
+}
+
+.intro-card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.intro-card h3{
+    color:#075b78;
+    margin-bottom:12px;
+}
+
+/* ================= COMMON CARDS ================= */
 
 .cards{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
-gap:22px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:24px;
 }
 
 .card{
-background:white;
-padding:28px;
-border-radius:10px;
-box-shadow:0 5px 20px rgba(0,0,0,.06);
-border-top:4px solid #19bfc3;
+    background:white;
+    padding:28px;
+    border-radius:10px;
+    box-shadow:0 5px 20px rgba(0,0,0,.055);
+    border-top:4px solid #19bdc1;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 12px 30px rgba(0,0,0,.10);
 }
 
 .card h3{
-color:#075b78;
-margin-bottom:12px;
+    color:#075b78;
+    font-size:19px;
+    margin-bottom:15px;
 }
 
 .card p{
-color:#64748b;
-font-size:14px;
+    color:#64748b;
+    font-size:14px;
 }
 
 .card ul{
-padding-left:20px;
-font-size:14px;
+    padding-left:19px;
+    font-size:14px;
+    color:#526274;
 }
 
 .card li{
-margin:5px 0;
+    margin:7px 0;
 }
 
-.about{
-background:white;
+/* ================= HEALTHCARE ================= */
+
+.healthcare{
+    background:#f1f7fb;
 }
 
-.company{
-margin-bottom:55px;
+.company-label{
+    text-align:center;
+    color:#0c9da4;
+    font-weight:bold;
+    letter-spacing:3px;
+    font-size:13px;
+    margin-bottom:12px;
 }
 
-.company h2{
-font-size:30px;
-color:#075b78;
-margin-bottom:15px;
+.tags{
+    text-align:center;
+    margin-bottom:35px;
 }
 
 .tag{
-display:inline-block;
-background:#e0f7f7;
-color:#075b78;
-padding:6px 12px;
-border-radius:20px;
-font-size:12px;
-font-weight:bold;
-margin:5px 3px;
+    display:inline-block;
+    background:#dff6f6;
+    color:#075b78;
+    padding:7px 15px;
+    margin:5px;
+    border-radius:30px;
+    font-size:12px;
+    font-weight:bold;
 }
 
-.highlight{
-background:#eaf7fa;
-text-align:center;
+/* ================= POWERLINE ================= */
+
+.powerline{
+    background:white;
 }
+
+.powerline .card{
+    border-top-color:#e5a52b;
+}
+
+.powerline .card h3{
+    color:#80530a;
+}
+
+/* ================= FOUNDATION ================= */
+
+.foundation{
+    background:#f1f7fb;
+}
+
+.foundation .card{
+    border-top-color:#23966c;
+}
+
+.foundation .card h3{
+    color:#17734f;
+}
+
+/* ================= PARTNERSHIP ================= */
+
+.partnership{
+    background:linear-gradient(120deg,#082c4a,#075b78);
+    color:white;
+    text-align:center;
+    padding:85px 20px;
+}
+
+.partnership h2{
+    font-size:35px;
+    margin-bottom:18px;
+}
+
+.partnership p{
+    max-width:850px;
+    margin:auto;
+    color:#dceaf3;
+}
+
+/* ================= CONTACT ================= */
 
 .contact{
-background:#071d35;
-color:white;
+    background:#071b35;
+    color:white;
 }
 
 .contact .section-title{
-color:white;
+    color:white;
 }
 
-.contact-container{
-display:grid;
-grid-template-columns:1fr 1.5fr;
-gap:35px;
+.contact .section-subtitle{
+    color:#cbd5e1;
+}
+
+.contact-grid{
+    display:grid;
+    grid-template-columns:1fr 1.5fr;
+    gap:35px;
+}
+
+.contact-info{
+    padding:25px;
 }
 
 .contact-info h3{
-color:#25c4c7;
-margin-bottom:15px;
+    color:#22c4c6;
+    margin-bottom:20px;
 }
 
 .contact-info p{
-margin:12px 0;
+    margin:17px 0;
+    color:#e2eaf1;
+}
+
+.contact-info strong{
+    color:white;
+}
+
+.contact-info a{
+    color:#35d1d1;
 }
 
 .contact-form{
-background:white;
-padding:30px;
-border-radius:10px;
+    background:white;
+    padding:35px;
+    border-radius:12px;
+}
+
+.contact-form h3{
+    color:#092c4c;
+    margin-bottom:20px;
+    font-size:23px;
+}
+
+.form-row{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:12px;
 }
 
 .contact-form input,
 .contact-form select,
 .contact-form textarea{
-width:100%;
-padding:13px;
-margin:9px 0;
-border:1px solid #ddd;
-border-radius:5px;
-font-size:14px;
+    width:100%;
+    padding:14px;
+    margin-bottom:14px;
+    border:1px solid #d9e0e8;
+    border-radius:5px;
+    font-size:14px;
+    font-family:Arial,sans-serif;
+    outline:none;
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus{
+    border-color:#12bfc2;
 }
 
 .contact-form button{
-width:100%;
-padding:14px;
-border:none;
-background:#075b78;
-color:white;
-font-size:16px;
-font-weight:bold;
-border-radius:5px;
-cursor:pointer;
+    width:100%;
+    padding:15px;
+    border:0;
+    background:#075b78;
+    color:white;
+    font-size:15px;
+    font-weight:bold;
+    border-radius:5px;
+    cursor:pointer;
+    transition:.3s;
 }
 
 .contact-form button:hover{
-background:#19bfc3;
-color:#071d35;
+    background:#16bfc2;
+    color:#071b35;
 }
 
+/* ================= FOOTER ================= */
+
 footer{
-background:#041323;
-color:white;
-text-align:center;
-padding:30px 10px;
-font-size:13px;
+    background:#041323;
+    color:#b8c5d2;
+    padding:55px 0 20px;
+}
+
+.footer-grid{
+    display:grid;
+    grid-template-columns:2fr 1fr 1fr;
+    gap:35px;
+    margin-bottom:35px;
+}
+
+footer h3{
+    color:#20c4c6;
+    margin-bottom:15px;
+}
+
+footer p{
+    font-size:14px;
+    margin-bottom:10px;
+}
+
+footer ul{
+    list-style:none;
+}
+
+footer li{
+    margin:9px 0;
 }
 
 footer a{
-color:#25c4c7;
-text-decoration:none;
+    color:#cbd5e1;
 }
 
-@media(max-width:768px){
-
-header{
-justify-content:center;
-gap:15px;
+footer a:hover{
+    color:#20c4c6;
 }
 
-nav{
-justify-content:center;
-gap:12px;
+.copyright{
+    border-top:1px solid #24394d;
+    padding-top:20px;
+    text-align:center;
+    font-size:13px;
 }
 
-.hero h1{
-font-size:30px;
+/* ================= LEGAL NOTICE ================= */
+
+.legal-notice{
+    background:#fff8e8;
+    border-left:4px solid #e3a52b;
+    padding:18px;
+    margin-top:30px;
+    color:#71541d;
+    font-size:13px;
+    border-radius:5px;
 }
 
-section{
-padding:55px 6%;
+/* ================= MOBILE ================= */
+
+@media(max-width:900px){
+
+    .header-inner{
+        flex-direction:column;
+        padding:15px 0;
+    }
+
+    nav{
+        justify-content:center;
+        flex-wrap:wrap;
+        gap:13px;
+    }
+
+    .hero h1{
+        font-size:38px;
+    }
+
+    .intro-grid{
+        grid-template-columns:1fr;
+    }
+
+    .footer-grid{
+        grid-template-columns:1fr 1fr;
+    }
 }
 
-.contact-container{
-grid-template-columns:1fr;
-}
+@media(max-width:600px){
 
+    .container{
+        width:92%;
+    }
+
+    .section{
+        padding:60px 0;
+    }
+
+    .section-title{
+        font-size:27px;
+    }
+
+    .hero{
+        padding:90px 0;
+    }
+
+    .hero h1{
+        font-size:32px;
+    }
+
+    .hero p{
+        font-size:15px;
+    }
+
+    nav a{
+        font-size:12px;
+    }
+
+    .contact-grid{
+        grid-template-columns:1fr;
+    }
+
+    .form-row{
+        grid-template-columns:1fr;
+        gap:0;
+    }
+
+    .contact-form{
+        padding:22px;
+    }
+
+    .footer-grid{
+        grid-template-columns:1fr;
+    }
+
+    .partnership h2{
+        font-size:28px;
+    }
 }
 
 </style>
+
 </head>
 
 <body>
 
-<!-- HEADER -->
+<!-- ================= HEADER ================= -->
 
 <header>
 
-<div class="logo">MEDCODEX GROUP</div>
+<div class="container header-inner">
+
+<div class="logo">
+MEDCODEX GROUP
+<span>GLOBAL BUSINESS & DEVELOPMENT</span>
+</div>
 
 <nav>
 <a href="#home">Home</a>
+<a href="#about">About</a>
 <a href="#healthcare">Healthcare</a>
 <a href="#powerline">Powerline</a>
 <a href="#foundation">Foundation</a>
-<a href="#contact">Contact Us</a>
+<a href="#contact" class="nav-button">Contact Us</a>
 </nav>
+
+</div>
 
 </header>
 
 
-<!-- HOME -->
+<!-- ================= HERO ================= -->
 
-<div class="hero" id="home">
+<section class="hero" id="home">
 
-<h1>Building Global Opportunities From India</h1>
+<div class="container hero-content">
 
-<p>
-Healthcare Outsourcing | Medical AI | Transmission Line Infrastructure |
-Education | Healthcare Development | International Partnerships
-</p>
-
-<a href="#contact" class="btn">Partner With Us</a>
-
+<div class="hero-label">
+WELCOME TO MEDCODEX GROUP
 </div>
 
+<h1>
+Building Global Opportunities<br>
+From India
+</h1>
 
-<!-- ABOUT -->
-
-<section class="about">
-
-<h2 class="section-title">About Our Organizations</h2>
-
-<p class="section-desc">
-
-We are developing business and social development initiatives
-through healthcare outsourcing, infrastructure construction,
-education, healthcare services and international partnerships.
-
-Our operations are based in India, with a vision to collaborate
-with international clients, organizations and development partners.
-
-</p>
-
-<div class="cards">
-
-<div class="card">
-<h3>Healthcare Services</h3>
 <p>
-International healthcare outsourcing, medical imaging,
-medical AI, medical data processing and healthcare BPO.
+Connecting Healthcare, Medical Technology, Power Infrastructure,
+Education and Social Development Through Global Partnerships.
 </p>
-</div>
 
-<div class="card">
-<h3>Power Infrastructure</h3>
-<p>
-Transmission line construction, tower foundation,
-tower erection, conductor stringing and OPGW services.
-</p>
-</div>
+<div class="hero-buttons">
 
-<div class="card">
-<h3>Education & Social Development</h3>
-<p>
-Schools, colleges, universities, scholarships,
-skill development and rural development initiatives.
-</p>
+<a href="#contact" class="btn btn-primary">
+Start a Partnership
+</a>
+
+<a href="#about" class="btn btn-outline">
+Explore Our Organizations
+</a>
+
 </div>
 
 </div>
@@ -359,29 +656,98 @@ skill development and rural development initiatives.
 </section>
 
 
-<!-- MEDCODEX HEALTHCARE -->
+<!-- ================= ABOUT ================= -->
 
-<section id="healthcare">
+<section class="section intro" id="about">
 
-<div class="company">
+<div class="container">
 
-<h2 class="section-title">MEDCODEX HEALTHCARE</h2>
+<h2 class="section-title">
+About <span class="accent">MedCodex Group</span>
+</h2>
 
-<p class="section-desc">
+<p class="section-subtitle">
 
-India-Based Global Healthcare Outsourcing & Medical AI Services.
+MedCodex Group brings together business and development initiatives
+focused on healthcare outsourcing, electrical transmission
+infrastructure, education and social development.
 
-We provide remote healthcare support services from India
-to international hospitals, diagnostic centres, healthcare
-companies, medical AI organizations and technology providers.
-
-Our services are designed for remote delivery without
-requiring physical operations in foreign countries.
+Based in India, we aim to build professional relationships
+with international clients, institutions, contractors,
+development organizations and strategic partners.
 
 </p>
 
-<div style="text-align:center;margin-bottom:30px">
+<div class="intro-grid">
 
+<div class="intro-card">
+
+<h3>Healthcare & Technology</h3>
+
+<p>
+Remote healthcare outsourcing, medical coding support,
+medical imaging data processing, medical AI annotation,
+healthcare administration and technology support.
+</p>
+
+</div>
+
+<div class="intro-card">
+
+<h3>Infrastructure & Engineering</h3>
+
+<p>
+Transmission line project support, tower foundation,
+tower erection, conductor stringing, OPGW and
+project-based manpower services.
+</p>
+
+</div>
+
+<div class="intro-card">
+
+<h3>Education & Social Development</h3>
+
+<p>
+Proposed initiatives for education access, scholarships,
+healthcare development, vocational training and
+rural community development.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= HEALTHCARE ================= -->
+
+<section class="section healthcare" id="healthcare">
+
+<div class="container">
+
+<div class="company-label">
+HEALTHCARE & MEDICAL TECHNOLOGY
+</div>
+
+<h2 class="section-title">
+MEDCODEX <span class="accent">HEALTHCARE</span>
+</h2>
+
+<p class="section-subtitle">
+
+India-Based Global Healthcare Outsourcing & Medical AI Support.
+
+We aim to support international hospitals, diagnostic centres,
+healthcare companies, medical AI developers and healthcare
+technology organizations through remote service delivery from India.
+
+</p>
+
+<div class="tags">
 <span class="tag">USA</span>
 <span class="tag">UK</span>
 <span class="tag">Australia</span>
@@ -389,8 +755,8 @@ requiring physical operations in foreign countries.
 <span class="tag">UAE</span>
 <span class="tag">Saudi Arabia</span>
 <span class="tag">Worldwide</span>
-
 </div>
+
 
 <div class="cards">
 
@@ -400,20 +766,20 @@ requiring physical operations in foreign countries.
 <li>ICD-10-CM Coding</li>
 <li>ICD-10-AM Coding</li>
 <li>CPT & HCPCS Coding</li>
-<li>DRG Coding</li>
-<li>HCC Coding</li>
-<li>Coding Quality Assurance</li>
+<li>DRG Coding Support</li>
+<li>HCC Coding Support</li>
 <li>Medical Coding Auditing</li>
+<li>Coding Quality Assurance</li>
 </ul>
 </div>
 
 <div class="card">
 <h3>Medical Billing & RCM</h3>
 <ul>
-<li>Medical Billing</li>
+<li>Medical Billing Support</li>
 <li>Claims Processing</li>
-<li>Claims Submission</li>
-<li>AR Follow-up</li>
+<li>Claims Submission Support</li>
+<li>Accounts Receivable Follow-up</li>
 <li>Denial Management</li>
 <li>Payment Posting</li>
 <li>Revenue Cycle Management</li>
@@ -421,40 +787,41 @@ requiring physical operations in foreign countries.
 </div>
 
 <div class="card">
-<h3>Radiology & Imaging</h3>
+<h3>Radiology & Medical Imaging</h3>
 <ul>
 <li>X-ray Data Processing</li>
 <li>CT Scan Data Processing</li>
 <li>MRI Data Processing</li>
 <li>Ultrasound Data Processing</li>
-<li>DICOM Management</li>
-<li>PACS & RIS Support</li>
-<li>Radiology Data Management</li>
+<li>Mammography Data Processing</li>
+<li>DICOM Data Management</li>
+<li>PACS & RIS Administrative Support</li>
 </ul>
 </div>
 
 <div class="card">
-<h3>Medical AI & Annotation</h3>
+<h3>Medical AI & Image Annotation</h3>
 <ul>
 <li>X-ray Image Annotation</li>
 <li>CT Image Annotation</li>
 <li>MRI Image Annotation</li>
 <li>Medical Image Segmentation</li>
 <li>AI Dataset Preparation</li>
-<li>Medical AI Quality Assurance</li>
-<li>Medical Data Labeling</li>
+<li>Image Quality Assurance</li>
+<li>Medical Data Labelling</li>
 </ul>
 </div>
 
 <div class="card">
-<h3>Medical Records</h3>
+<h3>Medical Records Management</h3>
 <ul>
 <li>EMR & EHR Data Processing</li>
 <li>Medical Record Review</li>
 <li>Clinical Data Extraction</li>
-<li>Medical Documentation</li>
+<li>Medical Documentation Support</li>
 <li>Patient Record Digitization</li>
 <li>Medical Data Entry</li>
+<li>Document Quality Checking</li>
 </ul>
 </div>
 
@@ -462,22 +829,24 @@ requiring physical operations in foreign countries.
 <h3>Healthcare BPO</h3>
 <ul>
 <li>Hospital Back Office</li>
-<li>Medical Virtual Assistant</li>
+<li>Virtual Medical Assistant</li>
 <li>Appointment Scheduling</li>
 <li>Patient Administration</li>
 <li>Medical Transcription</li>
 <li>Healthcare Email Support</li>
+<li>Administrative Data Processing</li>
 </ul>
 </div>
 
 <div class="card">
-<h3>Clinical Research</h3>
+<h3>Clinical Research Support</h3>
 <ul>
 <li>Clinical Trial Data Entry</li>
 <li>Research Data Management</li>
 <li>Medical Literature Review</li>
 <li>Clinical Data Validation</li>
 <li>Research Documentation</li>
+<li>Research Data Processing</li>
 </ul>
 </div>
 
@@ -489,7 +858,19 @@ requiring physical operations in foreign countries.
 <li>Healthcare Data Analytics</li>
 <li>Power BI Reporting</li>
 <li>Healthcare Software Testing</li>
-<li>Database Management</li>
+<li>Database Management Support</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Healthcare Data Security Support</h3>
+<ul>
+<li>Medical Data De-identification</li>
+<li>Document Classification</li>
+<li>Data Quality Review</li>
+<li>Access-controlled Workflows</li>
+<li>Data Processing Documentation</li>
+<li>Confidentiality Procedures</li>
 </ul>
 </div>
 
@@ -500,25 +881,32 @@ requiring physical operations in foreign countries.
 </section>
 
 
-<!-- GLOBAL POWERLINE -->
+<!-- ================= POWERLINE ================= -->
 
-<section id="powerline" class="about">
+<section class="section powerline" id="powerline">
 
-<h2 class="section-title">GLOBAL POWERLINE INFRASTRUCTURE</h2>
+<div class="container">
 
-<p class="section-desc">
+<div class="company-label">
+ELECTRICAL TRANSMISSION INFRASTRUCTURE
+</div>
+
+<h2 class="section-title">
+GLOBAL <span class="accent">POWERLINE</span> INFRASTRUCTURE
+</h2>
+
+<p class="section-subtitle">
 
 Transmission Line Construction | Tower Foundation |
 Tower Erection | Conductor Stringing | OPGW Installation.
 
-We aim to provide manpower, technical support and
-project-based subcontracting services for domestic
-and international electrical transmission infrastructure projects.
+We aim to provide project-based manpower, technical support
+and subcontracting services for electrical transmission
+infrastructure projects in India and international markets.
 
 </p>
 
-<div style="text-align:center;margin-bottom:30px">
-
+<div class="tags">
 <span class="tag">33 KV</span>
 <span class="tag">66 KV</span>
 <span class="tag">110 KV</span>
@@ -528,7 +916,6 @@ and international electrical transmission infrastructure projects.
 <span class="tag">500 KV</span>
 <span class="tag">765 KV</span>
 <span class="tag">800 KV HVDC</span>
-
 </div>
 
 <div class="cards">
@@ -536,18 +923,18 @@ and international electrical transmission infrastructure projects.
 <div class="card">
 <h3>Transmission Tower Types</h3>
 <ul>
-<li>Suspension Tower</li>
-<li>Tangent Tower</li>
-<li>Angle Tower</li>
-<li>Tension Tower</li>
-<li>Dead-End Tower</li>
-<li>Terminal Tower</li>
-<li>Crossing Tower</li>
-<li>Double Circuit Tower</li>
-<li>Multi-Circuit Tower</li>
-<li>HVDC Tower</li>
-<li>Monopole Structure</li>
-<li>H-Frame Structure</li>
+<li>Suspension Towers</li>
+<li>Tangent Towers</li>
+<li>Angle Towers</li>
+<li>Tension Towers</li>
+<li>Dead-End Towers</li>
+<li>Terminal Towers</li>
+<li>Crossing Towers</li>
+<li>Double Circuit Towers</li>
+<li>Multi-Circuit Towers</li>
+<li>HVDC Structures</li>
+<li>Monopole Structures</li>
+<li>H-Frame Structures</li>
 </ul>
 </div>
 
@@ -555,19 +942,19 @@ and international electrical transmission infrastructure projects.
 <h3>Tower Foundation Work</h3>
 <ul>
 <li>Site Survey & Marking</li>
-<li>Excavation</li>
-<li>Earthwork</li>
+<li>Excavation & Earthwork</li>
 <li>Reinforcement Work</li>
 <li>Shuttering & Formwork</li>
 <li>Stub Setting</li>
 <li>Concrete Pouring</li>
 <li>Foundation Curing</li>
 <li>Backfilling</li>
+<li>Foundation Finishing</li>
 </ul>
 </div>
 
 <div class="card">
-<h3>Tower Erection Work</h3>
+<h3>Tower Erection</h3>
 <ul>
 <li>Material Unloading</li>
 <li>Material Sorting</li>
@@ -577,6 +964,7 @@ and international electrical transmission infrastructure projects.
 <li>Tower Erection</li>
 <li>Bolt Tightening</li>
 <li>Tower Alignment</li>
+<li>Final Checking</li>
 </ul>
 </div>
 
@@ -586,7 +974,7 @@ and international electrical transmission infrastructure projects.
 <li>Conductor Drum Handling</li>
 <li>Pilot Wire Pulling</li>
 <li>Conductor Pulling</li>
-<li>Stringing</li>
+<li>Stringing Operations</li>
 <li>Sagging & Tensioning</li>
 <li>Conductor Clipping</li>
 <li>Jumper Installation</li>
@@ -609,21 +997,21 @@ and international electrical transmission infrastructure projects.
 </div>
 
 <div class="card">
-<h3>Electrical Hardware</h3>
+<h3>Electrical Hardware Installation</h3>
 <ul>
 <li>Insulator Installation</li>
 <li>Suspension Hardware</li>
 <li>Tension Hardware</li>
-<li>Earthing Connection</li>
+<li>Earthing Connections</li>
 <li>Danger Plate Installation</li>
 <li>Number Plate Installation</li>
 <li>Anti-Climbing Devices</li>
-<li>Final Inspection</li>
+<li>Final Inspection Support</li>
 </ul>
 </div>
 
 <div class="card">
-<h3>Manpower Supply</h3>
+<h3>Technical Manpower</h3>
 <ul>
 <li>Project Engineers</li>
 <li>Site Supervisors</li>
@@ -637,7 +1025,7 @@ and international electrical transmission infrastructure projects.
 </div>
 
 <div class="card">
-<h3>Contracting Services</h3>
+<h3>Project Contracting</h3>
 <ul>
 <li>Foundation Contracts</li>
 <li>Tower Erection Contracts</li>
@@ -652,122 +1040,34 @@ and international electrical transmission infrastructure projects.
 
 </div>
 
+</div>
+
 </section>
 
 
-<!-- FOUNDATION -->
+<!-- ================= FOUNDATION ================= -->
 
-<section id="foundation">
+<section class="section foundation" id="foundation">
 
-<h2 class="section-title">MEDCODEX HEALTHCARE FOUNDATION</h2>
+<div class="container">
 
-<p class="section-desc">
+<div class="company-label">
+EDUCATION & SOCIAL DEVELOPMENT
+</div>
 
-Education | Healthcare | Scholarships | Rural Development |
-Skill Development | International NGO Partnerships.
+<h2 class="section-title">
+MEDCODEX HEALTHCARE <span class="accent">FOUNDATION</span>
+</h2>
 
-Our proposed foundation initiatives aim to improve access
-to quality education, healthcare, employment and community
-development opportunities across India.
+<p class="section-subtitle">
 
-We welcome collaboration with eligible international NGOs,
-charitable foundations, philanthropic organizations and
-institutional development partners.
+Proposed Education, Healthcare and Community Development Initiatives.
+
+Our vision is to support access to quality education,
+healthcare services, scholarships, vocational training
+and rural development through eligible institutional
+and philanthropic partnerships.
 
 </p>
 
-<div class="cards">
-
-<div class="card">
-<h3>School Development</h3>
-<ul>
-<li>Primary Schools</li>
-<li>Middle Schools</li>
-<li>Secondary Schools</li>
-<li>Senior Secondary Schools</li>
-<li>English Medium Schools</li>
-<li>Girls' Schools</li>
-<li>Residential Schools</li>
-<li>Digital Smart Schools</li>
-<li>Rural Community Schools</li>
-</ul>
-</div>
-
-<div class="card">
-<h3>College Development</h3>
-<ul>
-<li>Degree Colleges</li>
-<li>Arts & Science Colleges</li>
-<li>Commerce Colleges</li>
-<li>Engineering Colleges</li>
-<li>Polytechnic Colleges</li>
-<li>Nursing Colleges</li>
-<li>Pharmacy Colleges</li>
-<li>Paramedical Colleges</li>
-<li>Teacher Training Colleges</li>
-</ul>
-</div>
-
-<div class="card">
-<h3>University Development</h3>
-<ul>
-<li>Private University Initiatives</li>
-<li>Technical Universities</li>
-<li>Medical & Health Science Universities</li>
-<li>Agricultural Universities</li>
-<li>Research Universities</li>
-<li>Skill Development Universities</li>
-<li>Science & Technology Institutions</li>
-<li>International Academic Partnerships</li>
-</ul>
-</div>
-
-<div class="card">
-<h3>Healthcare Education</h3>
-<ul>
-<li>Medical Education Centres</li>
-<li>Nursing Institutes</li>
-<li>Radiology Institutes</li>
-<li>Medical Laboratory Institutes</li>
-<li>Allied Health Science Institutes</li>
-<li>Paramedical Training Centres</li>
-<li>Healthcare Skill Development</li>
-</ul>
-</div>
-
-<div class="card">
-<h3>Scholarship Programmes</h3>
-<ul>
-<li>Free Education Support</li>
-<li>Girls' Education Scholarships</li>
-<li>Rural Student Scholarships</li>
-<li>Tribal Student Scholarships</li>
-<li>Higher Education Scholarships</li>
-<li>Student Hostel Support</li>
-<li>Books & Learning Materials</li>
-<li>Financial Assistance</li>
-</ul>
-</div>
-
-<div class="card">
-<h3>Skill Development</h3>
-<ul>
-<li>Computer Training Centres</li>
-<li>Digital Education</li>
-<li>IT Training</li>
-<li>Healthcare BPO Training</li>
-<li>Medical Coding Training</li>
-<li>Electrical Training</li>
-<li>Construction Skills</li>
-<li>Vocational Training</li>
-</ul>
-</div>
-
-<div class="card">
-<h3>Healthcare Development</h3>
-<ul>
-<li>Rural Healthcare Centres</li>
-<li>Community Clinics</li>
-<li>Diagnostic Centres</li>
-<li>Medical Camps</li>
-<li
+<div class="cards
