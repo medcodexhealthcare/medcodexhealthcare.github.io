@@ -3,70 +3,771 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>MEDCODEX HEALTHCARE | Healthcare Outsourcing | Medical AI | MedCodex Global Foundation</title>
-<meta name="description" content="MedCodex Healthcare - Healthcare Outsourcing, Medical AI, Radiology, Medical Coding, Billing and MedCodex Global Foundation for Education, Healthcare and Social Development.">
+
+<title>MedCodex Healthcare | Global Powerline Infrastructure</title>
+
+<meta name="description" content="MedCodex Healthcare provides global healthcare outsourcing, medical AI, medical imaging, and healthcare BPO services from India. Global Powerline Infrastructure provides transmission line construction services. MedCodex Healthcare Foundation focuses on education and social development.">
+
+<meta name="keywords" content="Healthcare Outsourcing, Medical Coding, Medical AI, Radiology, Medical Image Annotation, Transmission Line, Tower Erection, Foundation, School, College, University, NGO, India">
+
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',Arial,sans-serif}
-body{background:#f6f8fb;color:#111;line-height:1.7}
-a{text-decoration:none}
-header{background:#071a33;color:#fff;padding:16px 22px;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:99}
-.logo{font-size:23px;font-weight:900;letter-spacing:.5px}.logo span{color:#ffc107}
-nav a{color:#fff;margin:0 10px;font-size:13px;font-weight:700}
-.hero{background:linear-gradient(120deg,#071a33,#0a4d2e,#071a33);color:#fff;padding:70px 20px;text-align:center}
-.hero h1{font-size:38px;line-height:1.2}.hero h1 span{color:#ffc107}
-.hero p{max-width:900px;margin:18px auto;font-size:17px;opacity:.95}
-.btn{display:inline-block;background:#ffc107;color:#000;padding:13px 28px;border-radius:30px;font-weight:900;margin:6px}
-.btn2{background:#fff}
-.badge{display:inline-block;background:rgba(255,255,255,.15);padding:8px 16px;border-radius:30px;font-size:13px}
-.wrap{max-width:1150px;margin:auto;padding:55px 20px}
-h2{font-size:32px;text-align:center;margin-bottom:10px} .sub{text-align:center;color:#555;max-width:900px;margin:0 auto 30px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px}
-.card{background:#fff;padding:24px;border-radius:16px;box-shadow:0 4px 18px rgba(0,0,0,.07);border-top:4px solid #0a6b2e}
-.card h3{font-size:19px;margin-bottom:10px}.card ul{padding-left:18px;font-size:14.5px;color:#333}.card li{margin:5px 0}
-.green{background:#e9f9ee}
-.pill{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-top:20px}
-.pill span{background:#fff;border:1px solid #ddd;padding:8px 14px;border-radius:20px;font-size:13px;font-weight:600}
-details{background:#fff;border-radius:12px;padding:16px 18px;margin:10px 0;box-shadow:0 2px 10px rgba(0,0,0,.06);cursor:pointer}
-summary{font-weight:800;font-size:16px}
-details ul{padding-left:20px;margin-top:10px;font-size:14.5px;columns:2}
-.bigbox{background:#fff;padding:28px;border-radius:16px;box-shadow:0 4px 18px rgba(0,0,0,.07);margin-bottom:20px}
-.center{text-align:center}
-footer{background:#071a33;color:#fff;text-align:center;padding:32px 15px;font-size:14px;line-height:1.9}
-@media(max-width:750px){header{flex-direction:column} nav{margin-top:10px} .hero h1{font-size:27px} details ul{columns:1}}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+font-family:Arial,Helvetica,sans-serif;
+background:#f5f7fb;
+color:#263238;
+line-height:1.7;
+}
+
+header{
+background:#071d35;
+color:white;
+padding:18px 7%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+flex-wrap:wrap;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+.logo{
+font-size:23px;
+font-weight:bold;
+color:#25c4c7;
+}
+
+nav{
+display:flex;
+flex-wrap:wrap;
+gap:18px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+font-size:14px;
+font-weight:bold;
+}
+
+nav a:hover{
+color:#25c4c7;
+}
+
+.hero{
+background:linear-gradient(120deg,#071d35,#075b78);
+color:white;
+padding:110px 8%;
+text-align:center;
+}
+
+.hero h1{
+font-size:43px;
+margin-bottom:20px;
+}
+
+.hero p{
+max-width:850px;
+margin:auto;
+font-size:18px;
+}
+
+.btn{
+display:inline-block;
+margin-top:25px;
+padding:13px 27px;
+background:#19bfc3;
+color:#06243b;
+text-decoration:none;
+border-radius:5px;
+font-weight:bold;
+}
+
+.btn:hover{
+background:white;
+}
+
+section{
+padding:75px 8%;
+}
+
+.section-title{
+text-align:center;
+font-size:32px;
+color:#092d4b;
+margin-bottom:15px;
+}
+
+.section-desc{
+text-align:center;
+max-width:850px;
+margin:0 auto 40px;
+color:#64748b;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+gap:22px;
+}
+
+.card{
+background:white;
+padding:28px;
+border-radius:10px;
+box-shadow:0 5px 20px rgba(0,0,0,.06);
+border-top:4px solid #19bfc3;
+}
+
+.card h3{
+color:#075b78;
+margin-bottom:12px;
+}
+
+.card p{
+color:#64748b;
+font-size:14px;
+}
+
+.card ul{
+padding-left:20px;
+font-size:14px;
+}
+
+.card li{
+margin:5px 0;
+}
+
+.about{
+background:white;
+}
+
+.company{
+margin-bottom:55px;
+}
+
+.company h2{
+font-size:30px;
+color:#075b78;
+margin-bottom:15px;
+}
+
+.tag{
+display:inline-block;
+background:#e0f7f7;
+color:#075b78;
+padding:6px 12px;
+border-radius:20px;
+font-size:12px;
+font-weight:bold;
+margin:5px 3px;
+}
+
+.highlight{
+background:#eaf7fa;
+text-align:center;
+}
+
+.contact{
+background:#071d35;
+color:white;
+}
+
+.contact .section-title{
+color:white;
+}
+
+.contact-container{
+display:grid;
+grid-template-columns:1fr 1.5fr;
+gap:35px;
+}
+
+.contact-info h3{
+color:#25c4c7;
+margin-bottom:15px;
+}
+
+.contact-info p{
+margin:12px 0;
+}
+
+.contact-form{
+background:white;
+padding:30px;
+border-radius:10px;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea{
+width:100%;
+padding:13px;
+margin:9px 0;
+border:1px solid #ddd;
+border-radius:5px;
+font-size:14px;
+}
+
+.contact-form button{
+width:100%;
+padding:14px;
+border:none;
+background:#075b78;
+color:white;
+font-size:16px;
+font-weight:bold;
+border-radius:5px;
+cursor:pointer;
+}
+
+.contact-form button:hover{
+background:#19bfc3;
+color:#071d35;
+}
+
+footer{
+background:#041323;
+color:white;
+text-align:center;
+padding:30px 10px;
+font-size:13px;
+}
+
+footer a{
+color:#25c4c7;
+text-decoration:none;
+}
+
+@media(max-width:768px){
+
+header{
+justify-content:center;
+gap:15px;
+}
+
+nav{
+justify-content:center;
+gap:12px;
+}
+
+.hero h1{
+font-size:30px;
+}
+
+section{
+padding:55px 6%;
+}
+
+.contact-container{
+grid-template-columns:1fr;
+}
+
+}
+
 </style>
 </head>
+
 <body>
 
+<!-- HEADER -->
+
 <header>
-<div class="logo">MEDCODEX <span>HEALTHCARE</span></div>
-<nav><a href="#about">About</a><a href="#healthcare">Healthcare</a><a href="#foundation">Foundation</a><a href="#contact">Contact</a></nav>
+
+<div class="logo">MEDCODEX GROUP</div>
+
+<nav>
+<a href="#home">Home</a>
+<a href="#healthcare">Healthcare</a>
+<a href="#powerline">Powerline</a>
+<a href="#foundation">Foundation</a>
+<a href="#contact">Contact Us</a>
+</nav>
+
 </header>
 
-<div class="hero">
-<div class="badge">India Based Global Outsourcing Partner - USA - UK - Australia - UAE - Canada</div>
-<h1>COMPLETE GLOBAL HEALTHCARE<br>OUTSOURCING AND <span>MEDICAL AI SERVICES</span></h1>
-<p>Medical Imaging - Medical AI Annotation - Medical Coding - Medical Billing and RCM - Clinical Data - Healthcare BPO - Education and Social Development</p>
-<a class="btn" href="#healthcare">Explore Healthcare Services</a><a class="btn btn2" href="#foundation">Explore Foundation</a>
-<div style="margin-top:16px;font-size:14px">Founder: Pradeep Kumar | Hebbal, Bangalore, India</div>
+
+<!-- HOME -->
+
+<div class="hero" id="home">
+
+<h1>Building Global Opportunities From India</h1>
+
+<p>
+Healthcare Outsourcing | Medical AI | Transmission Line Infrastructure |
+Education | Healthcare Development | International Partnerships
+</p>
+
+<a href="#contact" class="btn">Partner With Us</a>
+
 </div>
+
 
 <!-- ABOUT -->
-<div class="wrap" id="about">
-<h2>About MEDCODEX HEALTHCARE</h2>
-<p class="sub">We are an India based organisation working with international clients to deliver reliable, secure and high quality healthcare outsourcing, medical data and social development support services.</p>
-<div class="grid">
-<div class="card"><h3>Who We Are</h3><p>MEDCODEX HEALTHCARE is an India based healthcare outsourcing and medical data services organisation. We support hospitals, diagnostic centres, radiology groups, healthcare BPO companies, medical AI startups, insurance companies, clinical research organisations and healthcare technology providers worldwide.</p></div>
-<div class="card"><h3>Our Mission</h3><p>To provide reliable, scalable and cost effective healthcare outsourcing, medical imaging data processing, medical AI support and healthcare back office solutions to international healthcare organisations, while creating employment and education opportunities in India.</p></div>
-<div class="card"><h3>Our Vision</h3><p>To become a trusted global partner for healthcare outsourcing and social development, where every hospital gets quality support, every young person gets skills and employment, and every underserved community gets access to education and healthcare.</p></div>
+
+<section class="about">
+
+<h2 class="section-title">About Our Organizations</h2>
+
+<p class="section-desc">
+
+We are developing business and social development initiatives
+through healthcare outsourcing, infrastructure construction,
+education, healthcare services and international partnerships.
+
+Our operations are based in India, with a vision to collaborate
+with international clients, organizations and development partners.
+
+</p>
+
+<div class="cards">
+
+<div class="card">
+<h3>Healthcare Services</h3>
+<p>
+International healthcare outsourcing, medical imaging,
+medical AI, medical data processing and healthcare BPO.
+</p>
 </div>
-<div class="pill"><span>HIPAA Compliant</span><span>GDPR Compliant</span><span>De-identification</span><span>Secure File Transfer</span><span>Quality Audit</span><span>Dedicated Team</span><span>Flexible Contract</span><span>Transparent Reporting</span></div>
+
+<div class="card">
+<h3>Power Infrastructure</h3>
+<p>
+Transmission line construction, tower foundation,
+tower erection, conductor stringing and OPGW services.
+</p>
 </div>
 
-<!-- HEALTHCARE -->
-<div class="wrap" id="healthcare">
-<h2>MEDCODEX HEALTHCARE - Healthcare Outsourcing</h2>
-<p class="sub">Remote Healthcare Support, Medical Imaging Data Processing, Medical AI Annotation, Coding, Billing and Healthcare Back Office Services For International Clients.</p>
+<div class="card">
+<h3>Education & Social Development</h3>
+<p>
+Schools, colleges, universities, scholarships,
+skill development and rural development initiatives.
+</p>
+</div>
 
-<details open><summary>Medical Coding Services</summary><ul><li>ICD-10-CM / ICD-10-AM / ICD-10-PCS</li><li>CPT Coding / HCPCS Coding</li><li>DRG Coding / HCC Risk Adjustment</li><li>Inpatient / Outpatient / Emergency Coding</li><li>Radiology / Surgery / Diagnosis / Procedure Coding</li><li>Clinical Coding / Medical Coding Auditing</li><li>Coding Quality Assurance / Error Identification</li><li>Coding Validation / Clinical Documentation Review</li></ul></details>
+</div>
 
-<details><summary>Medical Billing and Revenue Cycle Management</summary><ul><li>Medical / Hospital / Physician / Radiology / Laboratory Billing</li><li>Charge Entry / Claims Processing / Submission / Scrubbing</li><li>Claims Follow-up / Denial Management / Accounts Receivable</li><li>Payment Posting / EOB / ERA Processing</li><li>Insurance
+</section>
+
+
+<!-- MEDCODEX HEALTHCARE -->
+
+<section id="healthcare">
+
+<div class="company">
+
+<h2 class="section-title">MEDCODEX HEALTHCARE</h2>
+
+<p class="section-desc">
+
+India-Based Global Healthcare Outsourcing & Medical AI Services.
+
+We provide remote healthcare support services from India
+to international hospitals, diagnostic centres, healthcare
+companies, medical AI organizations and technology providers.
+
+Our services are designed for remote delivery without
+requiring physical operations in foreign countries.
+
+</p>
+
+<div style="text-align:center;margin-bottom:30px">
+
+<span class="tag">USA</span>
+<span class="tag">UK</span>
+<span class="tag">Australia</span>
+<span class="tag">Canada</span>
+<span class="tag">UAE</span>
+<span class="tag">Saudi Arabia</span>
+<span class="tag">Worldwide</span>
+
+</div>
+
+<div class="cards">
+
+<div class="card">
+<h3>Medical Coding</h3>
+<ul>
+<li>ICD-10-CM Coding</li>
+<li>ICD-10-AM Coding</li>
+<li>CPT & HCPCS Coding</li>
+<li>DRG Coding</li>
+<li>HCC Coding</li>
+<li>Coding Quality Assurance</li>
+<li>Medical Coding Auditing</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Medical Billing & RCM</h3>
+<ul>
+<li>Medical Billing</li>
+<li>Claims Processing</li>
+<li>Claims Submission</li>
+<li>AR Follow-up</li>
+<li>Denial Management</li>
+<li>Payment Posting</li>
+<li>Revenue Cycle Management</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Radiology & Imaging</h3>
+<ul>
+<li>X-ray Data Processing</li>
+<li>CT Scan Data Processing</li>
+<li>MRI Data Processing</li>
+<li>Ultrasound Data Processing</li>
+<li>DICOM Management</li>
+<li>PACS & RIS Support</li>
+<li>Radiology Data Management</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Medical AI & Annotation</h3>
+<ul>
+<li>X-ray Image Annotation</li>
+<li>CT Image Annotation</li>
+<li>MRI Image Annotation</li>
+<li>Medical Image Segmentation</li>
+<li>AI Dataset Preparation</li>
+<li>Medical AI Quality Assurance</li>
+<li>Medical Data Labeling</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Medical Records</h3>
+<ul>
+<li>EMR & EHR Data Processing</li>
+<li>Medical Record Review</li>
+<li>Clinical Data Extraction</li>
+<li>Medical Documentation</li>
+<li>Patient Record Digitization</li>
+<li>Medical Data Entry</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Healthcare BPO</h3>
+<ul>
+<li>Hospital Back Office</li>
+<li>Medical Virtual Assistant</li>
+<li>Appointment Scheduling</li>
+<li>Patient Administration</li>
+<li>Medical Transcription</li>
+<li>Healthcare Email Support</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Clinical Research</h3>
+<ul>
+<li>Clinical Trial Data Entry</li>
+<li>Research Data Management</li>
+<li>Medical Literature Review</li>
+<li>Clinical Data Validation</li>
+<li>Research Documentation</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Healthcare IT & Analytics</h3>
+<ul>
+<li>PACS Administration Support</li>
+<li>RIS Workflow Support</li>
+<li>Healthcare Data Analytics</li>
+<li>Power BI Reporting</li>
+<li>Healthcare Software Testing</li>
+<li>Database Management</li>
+</ul>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- GLOBAL POWERLINE -->
+
+<section id="powerline" class="about">
+
+<h2 class="section-title">GLOBAL POWERLINE INFRASTRUCTURE</h2>
+
+<p class="section-desc">
+
+Transmission Line Construction | Tower Foundation |
+Tower Erection | Conductor Stringing | OPGW Installation.
+
+We aim to provide manpower, technical support and
+project-based subcontracting services for domestic
+and international electrical transmission infrastructure projects.
+
+</p>
+
+<div style="text-align:center;margin-bottom:30px">
+
+<span class="tag">33 KV</span>
+<span class="tag">66 KV</span>
+<span class="tag">110 KV</span>
+<span class="tag">132 KV</span>
+<span class="tag">220 KV</span>
+<span class="tag">400 KV</span>
+<span class="tag">500 KV</span>
+<span class="tag">765 KV</span>
+<span class="tag">800 KV HVDC</span>
+
+</div>
+
+<div class="cards">
+
+<div class="card">
+<h3>Transmission Tower Types</h3>
+<ul>
+<li>Suspension Tower</li>
+<li>Tangent Tower</li>
+<li>Angle Tower</li>
+<li>Tension Tower</li>
+<li>Dead-End Tower</li>
+<li>Terminal Tower</li>
+<li>Crossing Tower</li>
+<li>Double Circuit Tower</li>
+<li>Multi-Circuit Tower</li>
+<li>HVDC Tower</li>
+<li>Monopole Structure</li>
+<li>H-Frame Structure</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Tower Foundation Work</h3>
+<ul>
+<li>Site Survey & Marking</li>
+<li>Excavation</li>
+<li>Earthwork</li>
+<li>Reinforcement Work</li>
+<li>Shuttering & Formwork</li>
+<li>Stub Setting</li>
+<li>Concrete Pouring</li>
+<li>Foundation Curing</li>
+<li>Backfilling</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Tower Erection Work</h3>
+<ul>
+<li>Material Unloading</li>
+<li>Material Sorting</li>
+<li>Leg Assembly</li>
+<li>Body Assembly</li>
+<li>Cross Arm Assembly</li>
+<li>Tower Erection</li>
+<li>Bolt Tightening</li>
+<li>Tower Alignment</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Conductor Stringing</h3>
+<ul>
+<li>Conductor Drum Handling</li>
+<li>Pilot Wire Pulling</li>
+<li>Conductor Pulling</li>
+<li>Stringing</li>
+<li>Sagging & Tensioning</li>
+<li>Conductor Clipping</li>
+<li>Jumper Installation</li>
+<li>Spacer & Damper Installation</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>OPGW & Earth Wire</h3>
+<ul>
+<li>OPGW Cable Stringing</li>
+<li>Earth Wire Installation</li>
+<li>OPGW Sagging</li>
+<li>Suspension Clamp Installation</li>
+<li>Tension Clamp Installation</li>
+<li>Joint Box Installation</li>
+<li>Fiber Optic Splicing</li>
+<li>Testing Support</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Electrical Hardware</h3>
+<ul>
+<li>Insulator Installation</li>
+<li>Suspension Hardware</li>
+<li>Tension Hardware</li>
+<li>Earthing Connection</li>
+<li>Danger Plate Installation</li>
+<li>Number Plate Installation</li>
+<li>Anti-Climbing Devices</li>
+<li>Final Inspection</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Manpower Supply</h3>
+<ul>
+<li>Project Engineers</li>
+<li>Site Supervisors</li>
+<li>Safety Officers</li>
+<li>Tower Erectors</li>
+<li>Riggers</li>
+<li>Electricians</li>
+<li>Welders</li>
+<li>Skilled & Unskilled Workers</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Contracting Services</h3>
+<ul>
+<li>Foundation Contracts</li>
+<li>Tower Erection Contracts</li>
+<li>Stringing Contracts</li>
+<li>OPGW Contracts</li>
+<li>Labour Contracts</li>
+<li>Monthly Manpower Rental</li>
+<li>Project-Based Subcontracting</li>
+<li>Joint Venture Partnerships</li>
+</ul>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- FOUNDATION -->
+
+<section id="foundation">
+
+<h2 class="section-title">MEDCODEX HEALTHCARE FOUNDATION</h2>
+
+<p class="section-desc">
+
+Education | Healthcare | Scholarships | Rural Development |
+Skill Development | International NGO Partnerships.
+
+Our proposed foundation initiatives aim to improve access
+to quality education, healthcare, employment and community
+development opportunities across India.
+
+We welcome collaboration with eligible international NGOs,
+charitable foundations, philanthropic organizations and
+institutional development partners.
+
+</p>
+
+<div class="cards">
+
+<div class="card">
+<h3>School Development</h3>
+<ul>
+<li>Primary Schools</li>
+<li>Middle Schools</li>
+<li>Secondary Schools</li>
+<li>Senior Secondary Schools</li>
+<li>English Medium Schools</li>
+<li>Girls' Schools</li>
+<li>Residential Schools</li>
+<li>Digital Smart Schools</li>
+<li>Rural Community Schools</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>College Development</h3>
+<ul>
+<li>Degree Colleges</li>
+<li>Arts & Science Colleges</li>
+<li>Commerce Colleges</li>
+<li>Engineering Colleges</li>
+<li>Polytechnic Colleges</li>
+<li>Nursing Colleges</li>
+<li>Pharmacy Colleges</li>
+<li>Paramedical Colleges</li>
+<li>Teacher Training Colleges</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>University Development</h3>
+<ul>
+<li>Private University Initiatives</li>
+<li>Technical Universities</li>
+<li>Medical & Health Science Universities</li>
+<li>Agricultural Universities</li>
+<li>Research Universities</li>
+<li>Skill Development Universities</li>
+<li>Science & Technology Institutions</li>
+<li>International Academic Partnerships</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Healthcare Education</h3>
+<ul>
+<li>Medical Education Centres</li>
+<li>Nursing Institutes</li>
+<li>Radiology Institutes</li>
+<li>Medical Laboratory Institutes</li>
+<li>Allied Health Science Institutes</li>
+<li>Paramedical Training Centres</li>
+<li>Healthcare Skill Development</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Scholarship Programmes</h3>
+<ul>
+<li>Free Education Support</li>
+<li>Girls' Education Scholarships</li>
+<li>Rural Student Scholarships</li>
+<li>Tribal Student Scholarships</li>
+<li>Higher Education Scholarships</li>
+<li>Student Hostel Support</li>
+<li>Books & Learning Materials</li>
+<li>Financial Assistance</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Skill Development</h3>
+<ul>
+<li>Computer Training Centres</li>
+<li>Digital Education</li>
+<li>IT Training</li>
+<li>Healthcare BPO Training</li>
+<li>Medical Coding Training</li>
+<li>Electrical Training</li>
+<li>Construction Skills</li>
+<li>Vocational Training</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Healthcare Development</h3>
+<ul>
+<li>Rural Healthcare Centres</li>
+<li>Community Clinics</li>
+<li>Diagnostic Centres</li>
+<li>Medical Camps</li>
+<li
